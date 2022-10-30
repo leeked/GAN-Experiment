@@ -1,3 +1,3 @@
-# OmniGAN
+# GAN-Experiment
 
-A GAN Architecture that I will use for everything. Because GAN's are awesome.
+Exploration on GAN design and usage. The aim is to design a modular architecture for use in future projects.
