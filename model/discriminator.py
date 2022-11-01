@@ -10,18 +10,18 @@ from utils import DEVICE
 
 """
 
-Sample Discriminator from PyTorch tutorial
+DCGAN Sample Discriminator from PyTorch tutorial
 
 """
 
-class Discriminator(nn.Module):
+class DCGANd(nn.Module):
     def __init__(
         self,
         nc = 3,
         nz = 100,
         ndf = 64,
     ):
-        super(Discriminator, self).__init__()
+        super(DCGANd, self).__init__()
         
         self.nc = nc
         self.nz = nz

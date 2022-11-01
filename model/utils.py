@@ -8,6 +8,21 @@ import matplotlib.pyplot as plt
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+def vis(lossG, lossD):
+  """
+  Visualization of loss over epochs
+  """
+  plt.figure()
+  plt.subplot(1,1,1)
+  plt.plot(np.arange(len(lossG)), lossG, c='r')
+  plt.plot(np.arange(len(lossD)), lossD, c='y')
+  plt.legend(['Generator','Discriminator'])
+  plt.grid(True)
+  plt.title('Loss over Epochs')
+  plt.xlabel('Epoch')
+  plt.ylabel('Loss')
+  plt.savefig("log/loss.png")
+
 """
 
 Custom Weight Initialization

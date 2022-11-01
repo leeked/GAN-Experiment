@@ -10,18 +10,18 @@ from utils import DEVICE
 
 """
 
-Sample Generator from PyTorch tutorial
+DCGAN Sample Generator from PyTorch tutorial
 
 """
 
-class Generator(nn.Module):
+class DCGANg(nn.Module):
     def __init__(
         self,
         nc = 3,
         nz = 100,
         ngf = 64,
     ):
-        super(Generator, self).__init__()
+        super(DCGANg, self).__init__()
         
         self.nc = nc
         self.nz = nz
